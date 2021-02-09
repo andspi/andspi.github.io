@@ -1,0 +1,170 @@
+body {
+  font-family: "IBM Plex Sans", sans-serif;
+   
+  background-image: url("../img/bp_bg.png");
+  padding-bottom: 50px;
+  
+}
+
+h2 {
+  font-size: 42px;
+  font-weight: 400;
+  text-align: center;
+  letter-spacing: 2px;
+  line-height: 1.;
+}
+
+.logo {
+  display: block;
+  width: 75%;
+  max-width: 700px;
+  position: relative;
+  margin-left: auto;
+  margin-right: auto;
+  align-items: center;
+  letter-spacing: 2px;
+  line-height: 2.5; 
+  font-size: 42px;
+  font-weight: 600;
+}
+
+h3 {
+  font-size: 22px;
+  font-weight: 300;
+  letter-spacing: 1px;
+  line-height: 1.5;
+}
+
+#banner {
+  width: 75%;
+  min-height: 5px;
+  max-width: 700px;
+  padding: 45px 70px 45px 45px;
+  margin: 0 auto;
+  position: relative;
+  border-radius: none;
+  text-align: right;
+  font-size: 16px;
+  box-sizing: border-box;
+  font-family: sans-serif;
+}
+
+.banner-link {
+  margin:0 10px 0;
+  text-decoration: none;
+  font-weight: 450;
+}
+
+details {
+  width: 75%;
+  min-height: 5px;
+  max-width: 700px;
+  padding: 45px 70px 45px 45px;
+  margin: 0 auto;
+  position: relative;
+  font-size: 22px;
+  border: 1px solid rgba(0,0,0,.1);
+  border-radius: 15px;
+  box-sizing: border-box;
+  transition: all .3s;
+  background-color: #ead59f;
+  box-shadow: 2px 2px 20px rgba(0,0,0,.2);
+}
+
+details + details {
+  margin-top: 20px;
+}
+
+details[open] {
+  
+  background-color: #f6f7f8;
+  min-height: 50px;
+  box-shadow: 4px 4px 40px rgba(0,0,0,.4);
+}
+
+details p,li  {
+  color: #442200  ;
+  font-weight: 300;
+}
+
+summary {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-weight: 500;
+  cursor: pointer;
+}
+
+summary:focus {
+  outline: none;
+  
+}
+
+summary:focus::after {
+  content: "";
+  height: 100%;
+  width: 100%;
+  display: block;
+  position: absolute;
+  top: 0;
+  left: 0;
+  box-shadow: 0 0 0 5px rebeccapurple;
+}
+
+summary::-webkit-details-marker {
+  display: none
+}
+
+.control-icon {
+  fill: rebeccapurple;
+  transition: .3s ease;
+  pointer-events: none;
+}
+
+.control-icon-close {
+  display: none;
+}
+
+details[open] .control-icon-close {
+  display: initial;
+  transition: .3s ease;
+}
+
+details[open] .control-icon-expand {
+  display: none;
+}
+
+pre {
+  display: block;
+  font-family: monospace;
+  white-space: pre;
+  margin: 1em 0;
+}
+
+
+.navbar {
+  background-color: rgba(170, 136, 85,.5);
+  overflow: hidden;
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  box-sizing: border-box;
+  margin-top: 20px;
+}
+
+.navbar a {
+  float: left;
+  display: block;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+  font-weight: 500;
+}
+
+.navbar a:hover {
+  background-color: #eedd99;
+  color: black;
+}
